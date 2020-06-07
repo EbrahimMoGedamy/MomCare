@@ -9,10 +9,11 @@
 import UIKit
 
 extension EatingPrinciplesVC : UITableViewDataSource{
-        func setupTableView(tableView : UITableView){
+    func setupTableView(tableView : UITableView){
         tableView.dataSource = self
         tableView.delegate = self
         tableView.registerCell(cell: SafeTVCell.self)
+        tableView.tableFooterView = UIView()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,7 +41,7 @@ extension EatingPrinciplesVC : UITableViewDataSource{
             default:
                 break
             }
-           return cell
+            return cell
         }else{
             return UITableViewCell()
         }

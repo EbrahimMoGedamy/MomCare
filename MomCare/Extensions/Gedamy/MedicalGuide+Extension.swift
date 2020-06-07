@@ -57,13 +57,13 @@ extension MedicalGuideVC:UICollectionViewDataSource{
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if collectionView == self.allObjctsCollectionView{
-            return CGSize(width: collectionView.frame.size.width / 1.5, height: collectionView.frame.size.height)
-        }else{
-            return CGSize(width: collectionView.frame.size.height, height: collectionView.frame.size.height)
-        }
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        if collectionView == self.allObjctsCollectionView{
+//            return CGSize(width: collectionView.frame.size.width / 3, height: collectionView.frame.size.height)
+//        }else{
+//            return CGSize(width: collectionView.frame.size.height, height: collectionView.frame.size.height)
+//        }
+//    }
 }
 
 extension MedicalGuideVC : UIScrollViewDelegate {
@@ -148,7 +148,27 @@ extension MedicalGuideVC : UIScrollViewDelegate {
         }
     }
 }
-
+//
+//extension MedicalGuideVC : UICollectionViewDelegateFlowLayout{
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        if collectionView == self.allObjctsCollectionView{
+//        return UIEdgeInsets(top: 20, left: 40, bottom: 10, right: 40)
+//        }
+//        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        //Horizental Spacing
+//        if collectionView == self.allObjctsCollectionView{
+//        return 10
+//        }
+//        return 0
+//    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        //Vertical Spacing
+//        return 0
+//    }
+//}
 extension MedicalGuideVC:UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

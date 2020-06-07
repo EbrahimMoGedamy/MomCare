@@ -22,8 +22,17 @@ extension NutritionNeededVC : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NutritionNeededCVCell", for: indexPath) as! NutritionNeededCVCell
-        cell.shadowDecorate(color : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-        cell.contentView.backgroundColor = UIColor.random()
+        switch indexPath.item {
+        case 0:
+        cell.backgroundColor = #colorLiteral(red: 0.9176470588, green: 0.3450980392, blue: 0.07058823529, alpha: 1)
+        cell.shadowDecorate(color: #colorLiteral(red: 0.9176470588, green: 0.3450980392, blue: 0.07058823529, alpha: 1))
+        case 1:
+            cell.backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1)
+            cell.shadowDecorate(color: #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1))
+            
+        default:
+            break
+        }
         cell.nutritionInage.image = UIImage(named: NutritionNeededVCPresenter.shared.nutritionImageArr[indexPath.row])
         cell.nutritionTitle.text = NutritionNeededVCPresenter.shared.nutrionNameArr[indexPath.row]
         return cell

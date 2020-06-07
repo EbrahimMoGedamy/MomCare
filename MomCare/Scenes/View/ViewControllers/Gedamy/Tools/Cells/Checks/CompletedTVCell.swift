@@ -10,7 +10,7 @@ import UIKit
 
 class CompletedTVCell: UITableViewCell {
 
-        @IBOutlet weak var selectBu: LocalizableButton!
+    @IBOutlet weak var selectImgC: UIImageView!
         @IBOutlet weak var textView: UITextView!
         @IBOutlet weak var pregnancyTestLbl: LocalizableLabel!
         @IBOutlet weak var periodLbl: LocalizableLabel!

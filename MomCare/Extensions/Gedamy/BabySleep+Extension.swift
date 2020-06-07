@@ -14,6 +14,8 @@ extension BabySleepVC : UITableViewDataSource{
         tableView.dataSource = self
         tableView.delegate = self
         tableView.registerCell(cell: BabySleepTVCell.self)
+        tableView.separatorColor = UIColor.clear
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,7 +32,7 @@ extension BabySleepVC : UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 225
+        return 175
     }
 }
 

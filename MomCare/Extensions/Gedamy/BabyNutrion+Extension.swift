@@ -22,8 +22,25 @@ extension BabyNutritionVC : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PregnancySupplementCVCell", for: indexPath) as! PregnancySupplementCVCell
-        cell.shadowDecorate(color : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-        cell.contentView.backgroundColor = UIColor.random()
+        //"Child Nutrition Guide", "Industrial breastfeeding", "Breastfeeding" ," Does your baby have enough amount of sleep"
+        switch indexPath.item {
+        case 0:
+            cell.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.6705882353, blue: 0.2078431373, alpha: 1)
+            cell.shadowDecorate(color: #colorLiteral(red: 0.9490196078, green: 0.6705882353, blue: 0.2078431373, alpha: 1))
+        case 1:
+            cell.backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1)
+            cell.shadowDecorate(color: #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1))
+
+        case 2:
+            cell.backgroundColor = #colorLiteral(red: 0.9176470588, green: 0.3450980392, blue: 0.07058823529, alpha: 1)
+            cell.shadowDecorate(color: #colorLiteral(red: 0.9176470588, green: 0.3450980392, blue: 0.07058823529, alpha: 1))
+        case 3:
+            cell.backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1)
+            cell.shadowDecorate(color: #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1))
+            
+        default:
+            break
+        }
         cell.nutritionTitle.text = self.guideArr[indexPath.row]
         return cell
     }
@@ -31,7 +48,7 @@ extension BabyNutritionVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let bounds = collectionView.bounds
         
-        return CGSize(width: bounds.width/3.5, height: 150)
+        return CGSize(width: bounds.width/3.5, height: 100)
     }
     
 }
@@ -54,9 +71,9 @@ extension BabyNutritionVC : UICollectionViewDelegateFlowLayout{
 extension BabyNutritionVC : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //["Nutrition Needed","Food Recipes","Extra Weight"]
-            let vc = ChildNutritionGuideVC(nibName: "ChildNutritionGuideVC", bundle: nil)
-            vc.nutritionLbl = "Child Nutrition Guide"
-            self.navigationController?.pushViewController(vc, animated: true)
+        let vc = ChildNutritionGuideVC(nibName: "ChildNutritionGuideVC", bundle: nil)
+        vc.nutritionLbl = self.guideArr[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

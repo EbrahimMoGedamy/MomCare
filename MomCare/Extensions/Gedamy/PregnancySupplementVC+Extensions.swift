@@ -25,8 +25,8 @@ extension PregnancySupplementVC : UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PregnancySupplementCVCell", for: indexPath) as? PregnancySupplementCVCell{
-        cell.shadowDecorate(color : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-        cell.contentView.backgroundColor = UIColor.random()
+        cell.backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1)
+        cell.shadowDecorate(color: #colorLiteral(red: 0.1647058824, green: 0.6470588235, blue: 0.6745098039, alpha: 1))
             cell.nutritionTitle.text = PregnancySupplementPresenter.shared.nutrionNameArr[indexPath.row]
         return cell
         }else{

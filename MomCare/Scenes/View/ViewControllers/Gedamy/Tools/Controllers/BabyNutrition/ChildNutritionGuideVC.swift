@@ -34,7 +34,5 @@ class ChildNutritionGuideVC: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
         
-        @IBAction func nextBuTapped(_ sender: UIButton) {
-           // self.handlePushSegue(viewController: ArticlesVC.self)
-        }
+
     }

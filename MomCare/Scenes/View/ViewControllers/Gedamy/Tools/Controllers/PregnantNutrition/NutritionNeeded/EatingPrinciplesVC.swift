@@ -21,8 +21,6 @@ class EatingPrinciplesVC: UIViewController {
 
             self.backBu.set(image: UIImage(named: "arrow_point"), title: "", titlePosition: .right, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
             self.titleLbl.text = self.titleName
-    //        self.setupSegmentedControl()
-    //        safeView =
             self.setupTableView(tableView: self.saftyTableView)
         }
         

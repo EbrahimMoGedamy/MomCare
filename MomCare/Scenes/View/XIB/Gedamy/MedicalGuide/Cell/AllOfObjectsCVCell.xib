@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -25,18 +25,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-7T-2Te">
-                        <rect key="frame" x="14" y="14" width="32" height="12"/>
-                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                        <rect key="frame" x="5" y="5" width="50" height="30"/>
+                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="jl0-7T-2Te" firstAttribute="top" secondItem="vSI-Os-UZb" secondAttribute="top" constant="14" id="0cC-tH-UOJ"/>
-                    <constraint firstItem="jl0-7T-2Te" firstAttribute="leading" secondItem="vSI-Os-UZb" secondAttribute="leading" constant="14" id="0sT-Xp-Cem"/>
-                    <constraint firstAttribute="trailing" secondItem="jl0-7T-2Te" secondAttribute="trailing" constant="14" id="6rv-eo-idN"/>
+                    <constraint firstItem="jl0-7T-2Te" firstAttribute="top" secondItem="vSI-Os-UZb" secondAttribute="top" constant="5" id="0cC-tH-UOJ"/>
+                    <constraint firstItem="jl0-7T-2Te" firstAttribute="leading" secondItem="vSI-Os-UZb" secondAttribute="leading" constant="5" id="0sT-Xp-Cem"/>
+                    <constraint firstAttribute="trailing" secondItem="jl0-7T-2Te" secondAttribute="trailing" constant="5" id="6rv-eo-idN"/>
                     <constraint firstItem="Ao0-3l-LFP" firstAttribute="top" secondItem="vSI-Os-UZb" secondAttribute="top" id="7NC-Pd-fwh"/>
-                    <constraint firstAttribute="bottom" secondItem="jl0-7T-2Te" secondAttribute="bottom" constant="14" id="eSQ-HO-weh"/>
+                    <constraint firstAttribute="bottom" secondItem="jl0-7T-2Te" secondAttribute="bottom" constant="5" id="eSQ-HO-weh"/>
                     <constraint firstItem="Ao0-3l-LFP" firstAttribute="leading" secondItem="vSI-Os-UZb" secondAttribute="leading" id="uqB-Dl-YhQ"/>
                     <constraint firstAttribute="bottom" secondItem="Ao0-3l-LFP" secondAttribute="bottom" id="vOq-1S-f23"/>
                     <constraint firstAttribute="trailing" secondItem="Ao0-3l-LFP" secondAttribute="trailing" id="zN6-uy-JLd"/>

@@ -48,7 +48,7 @@ class helper: NSObject {
 //        vc.selectedIndex = 0
 //        window.rootViewController = vc
         
-        restartApp()
+        //restartApp()
     }
     
     class func getData() -> Any? {

@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckVC" customModule="MomCare" customModuleProvider="target">
             <connections>
-                <outlet property="checkTableView" destination="T8A-YX-bDU" id="plG-OM-YOu"/>
-                <outlet property="contentView" destination="t2Y-lV-dJW" id="i5H-2v-Iyb"/>
-                <outlet property="selectedSementControl" destination="ptU-H1-Jox" id="gf7-Nn-m9M"/>
-                <outlet property="titleLbl" destination="KfO-Tn-qhh" id="iSr-Pb-oWK"/>
+                <outlet property="checkTableView" destination="T8A-YX-bDU" id="6Ok-cx-gdb"/>
+                <outlet property="selectedSementControl" destination="ptU-H1-Jox" id="jc6-F0-5Bo"/>
+                <outlet property="titleLbl" destination="KfO-Tn-qhh" id="Vz2-6f-mgb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +23,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc0-Kw-cYN">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-Tn-qhh">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-Tn-qhh" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
                             <rect key="frame" x="139" y="9.5" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.099540045960000004" green="0.78815038069999999" blue="0.75605755770000005" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
@@ -38,7 +37,7 @@
                             </constraints>
                             <state key="normal" image="arrow_point"/>
                             <connections>
-                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="sH8-WF-76a"/>
+                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="8RX-vl-K0j"/>
                             </connections>
                         </button>
                     </subviews>
@@ -63,7 +62,7 @@
                     </segments>
                     <color key="selectedSegmentTintColor" red="0.08235294118" green="0.66274509800000003" blue="0.74901960779999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                     <connections>
-                        <action selector="allChechBuTapped:" destination="-1" eventType="touchUpInside" id="8ZS-cz-7hQ"/>
+                        <action selector="allChechBuTapped:" destination="-1" eventType="valueChanged" id="Zhe-HZ-7zL"/>
                     </connections>
                 </segmentedControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2Y-lV-dJW" userLabel="ContentTableView">

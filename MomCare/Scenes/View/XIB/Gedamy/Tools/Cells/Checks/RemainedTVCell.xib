@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,18 +28,7 @@
                         <color key="textColor" red="0.08235294118" green="0.66274509800000003" blue="0.74901960779999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB1-Sf-mOO">
-                        <rect key="frame" x="294.5" y="10.5" width="16" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="16" id="Xm0-Ro-MvV"/>
-                            <constraint firstAttribute="height" constant="20" id="whE-S5-oAp"/>
-                        </constraints>
-                        <state key="normal" image="correct-1"/>
-                        <connections>
-                            <action selector="selectBuTapped:" destination="JcP-Xs-JQS" eventType="touchUpInside" id="FaU-rJ-PlT"/>
-                        </connections>
-                    </button>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-44-B9J">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-44-B9J">
                         <rect key="frame" x="20" y="39" width="290.5" height="86"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -47,31 +36,34 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-47-lc5">
+                        <rect key="frame" x="306" y="13" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="URa-4M-f1B"/>
+                            <constraint firstAttribute="width" constant="15" id="yvN-lq-Gi2"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="5Mu-9e-7KQ" firstAttribute="leading" secondItem="bU8-1L-FSd" secondAttribute="leading" constant="10" id="0eI-Z1-FRM"/>
-                    <constraint firstItem="GB1-Sf-mOO" firstAttribute="centerY" secondItem="OXR-MY-Hcm" secondAttribute="centerY" id="5vg-ax-gmg"/>
                     <constraint firstItem="zIk-44-B9J" firstAttribute="leading" secondItem="bU8-1L-FSd" secondAttribute="leading" constant="20" id="DxD-Ah-ab3"/>
+                    <constraint firstItem="IFd-47-lc5" firstAttribute="centerY" secondItem="OXR-MY-Hcm" secondAttribute="centerY" id="IdQ-Td-ZCq"/>
                     <constraint firstItem="OXR-MY-Hcm" firstAttribute="centerY" secondItem="5Mu-9e-7KQ" secondAttribute="centerY" id="MO0-yp-Rxh"/>
-                    <constraint firstItem="zIk-44-B9J" firstAttribute="trailing" secondItem="GB1-Sf-mOO" secondAttribute="trailing" id="XWl-t9-eVH"/>
                     <constraint firstAttribute="bottom" secondItem="zIk-44-B9J" secondAttribute="bottom" constant="15" id="bLk-T5-JU1"/>
-                    <constraint firstAttribute="trailing" secondItem="GB1-Sf-mOO" secondAttribute="trailing" constant="25.5" id="eJR-Kj-86T"/>
                     <constraint firstItem="OXR-MY-Hcm" firstAttribute="leading" secondItem="5Mu-9e-7KQ" secondAttribute="trailing" constant="10" id="htt-M4-0i6"/>
                     <constraint firstItem="5Mu-9e-7KQ" firstAttribute="top" secondItem="bU8-1L-FSd" secondAttribute="top" constant="10" id="j4q-6T-8wF"/>
                     <constraint firstItem="zIk-44-B9J" firstAttribute="top" secondItem="OXR-MY-Hcm" secondAttribute="bottom" constant="8.5" id="nad-wh-2Sj"/>
+                    <constraint firstAttribute="trailing" secondItem="IFd-47-lc5" secondAttribute="trailing" constant="15" id="v3J-wo-Uqn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="xdk-77-2De"/>
             <connections>
                 <outlet property="periodLbl" destination="OXR-MY-Hcm" id="y53-Rc-fnh"/>
                 <outlet property="pregnancyTestLbl" destination="5Mu-9e-7KQ" id="hlC-Ju-cFw"/>
-                <outlet property="selectBu" destination="GB1-Sf-mOO" id="CIl-zr-9f7"/>
+                <outlet property="selectImg" destination="IFd-47-lc5" id="yeo-kc-F2t"/>
                 <outlet property="textView" destination="zIk-44-B9J" id="38n-R7-4Mj"/>
             </connections>
             <point key="canvasLocation" x="22" y="84"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="correct-1" width="16" height="16"/>
-    </resources>
 </document>
