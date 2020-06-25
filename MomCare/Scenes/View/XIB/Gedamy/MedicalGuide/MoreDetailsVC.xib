@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,24 +40,28 @@
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-uY-KBy">
                                     <rect key="frame" x="0.0" y="234.5" width="320" height="365.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <mutableString key="text">لا ينصح بإصطحاب الطفل في رحلة خارج البلاد خلال الشهرين الأول والثاني من عمره، لأن هذه المرحلة يصعب على الأم تنظيم حياتها، وتكرس كل وقتها للطفل.
+
+أما بعد إتمامه ثلاثة أشهر تصبح مناعتهم أقوى، وينتظم نومهم بصورة أفضل، كما تكون الأم قد إستعادت عافيتها وتكيفت مع الوضع الجديد.
+
+أما في حالة السفر بعد الولادة، فقد تفاجأ الأم ببعض الأمور التي لم تضعها في إعتبارها من قبل، ولا تحسن التصرف فيها خلال السفر، فمثلاً يمكن أن تحتاج إلى أخذ الطفل للطبيب الخاص به في حالة طارئة.</mutableString>
                                     <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNT-72-A7a">
-                                    <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                    <rect key="frame" x="290" y="20" width="20" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="P1d-Pa-dkG"/>
                                         <constraint firstAttribute="height" constant="20" id="uKv-cM-ku5"/>
                                     </constraints>
-                                    <state key="normal" image="arrow_pointt"/>
+                                    <state key="normal" image="right_arrow"/>
                                     <connections>
                                         <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="rKL-Ee-m84"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StT-EV-Dxi">
-                                    <rect key="frame" x="9" y="207" width="37" height="17.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السفر مع الرضيع" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StT-EV-Dxi">
+                                    <rect key="frame" x="219.5" y="207" width="90.5" height="17.5"/>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                     <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -70,13 +74,13 @@
                                 <constraint firstAttribute="trailing" secondItem="Kbn-nF-b0n" secondAttribute="trailing" id="2hF-7C-HIA"/>
                                 <constraint firstItem="WC7-uY-KBy" firstAttribute="leading" secondItem="aL8-c1-3lQ" secondAttribute="leading" id="8qf-SY-evX"/>
                                 <constraint firstItem="WC7-uY-KBy" firstAttribute="top" secondItem="StT-EV-Dxi" secondAttribute="bottom" constant="10" id="BiX-cz-zmz"/>
-                                <constraint firstItem="StT-EV-Dxi" firstAttribute="leading" secondItem="aL8-c1-3lQ" secondAttribute="leading" constant="9" id="EZh-Ad-Bju"/>
                                 <constraint firstItem="Kbn-nF-b0n" firstAttribute="leading" secondItem="aL8-c1-3lQ" secondAttribute="leading" id="McP-jx-8iH"/>
-                                <constraint firstItem="vNT-72-A7a" firstAttribute="leading" secondItem="aL8-c1-3lQ" secondAttribute="leading" constant="20" id="PJL-ef-szp"/>
+                                <constraint firstAttribute="trailing" secondItem="StT-EV-Dxi" secondAttribute="trailing" constant="10" id="Rrx-Cf-Nhl"/>
                                 <constraint firstItem="StT-EV-Dxi" firstAttribute="top" secondItem="Kbn-nF-b0n" secondAttribute="bottom" constant="17" id="T99-ff-31U"/>
                                 <constraint firstItem="vNT-72-A7a" firstAttribute="top" secondItem="aL8-c1-3lQ" secondAttribute="top" constant="20" id="Yjp-br-keJ"/>
                                 <constraint firstAttribute="bottom" secondItem="WC7-uY-KBy" secondAttribute="bottom" constant="50" id="d58-ZK-DpC"/>
                                 <constraint firstAttribute="trailing" secondItem="WC7-uY-KBy" secondAttribute="trailing" id="wem-v3-0dy"/>
+                                <constraint firstItem="vNT-72-A7a" firstAttribute="trailing" secondItem="Kbn-nF-b0n" secondAttribute="trailing" constant="-10" id="wyS-Th-OXb"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -131,6 +135,6 @@
     <resources>
         <image name="126" width="116" height="112.5"/>
         <image name="133-022508-postpartum-depression-common-new-parents_700x400" width="107" height="107"/>
-        <image name="arrow_pointt" width="13.5" height="24"/>
+        <image name="right_arrow" width="14" height="24"/>
     </resources>
 </document>

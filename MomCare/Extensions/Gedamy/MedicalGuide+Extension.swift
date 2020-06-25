@@ -42,14 +42,15 @@ extension MedicalGuideVC:UICollectionViewDataSource{
         }else if collectionView == allObjctsCollectionView {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AllOfObjectsCVCell", for: indexPath) as? AllOfObjectsCVCell{
                 cell.titleLbl.text = self.titleArr[indexPath.row]
-                cell.image.image = UIImage(named: "191204091026435_كيف-اعتني-بطفلي-في-الشهر-الثاني-1")
+                cell.image.image = UIImage(named: self.objectsImages[indexPath.row])
                 return cell
             }else{
                 return UICollectionViewCell()
             }
         }else{
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MostReadingCVCell", for: indexPath) as? MostReadingCVCell{
-                
+                cell.imageProfile.image = UIImage(named: self.images[indexPath.row])
+                cell.lable.text = self.titles[indexPath.row]
                 return cell
             }else{
                 return UICollectionViewCell()

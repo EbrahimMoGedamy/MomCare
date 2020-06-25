@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -26,17 +26,17 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Zas-H4-Omc">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-ln-uRg">
-                    <rect key="frame" x="0.0" y="396" width="414" height="466"/>
+                    <rect key="frame" x="0.0" y="320" width="375" height="347"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEe-7T-qCR">
-                            <rect key="frame" x="0.0" y="415.5" width="414" height="50"/>
+                            <rect key="frame" x="0.0" y="296.5" width="375" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97w-bU-r9o">
-                                    <rect key="frame" x="334" y="10" width="50" height="40"/>
+                                    <rect key="frame" x="295" y="10" width="50" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="hoZ-3a-kMI"/>
                                         <constraint firstAttribute="height" constant="40" id="kab-Cf-EnA"/>
@@ -72,12 +72,12 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxw-nH-4bO" customClass="LocalizableButton" customModule="MomCare" customModuleProvider="target">
-                            <rect key="frame" x="25" y="246" width="364" height="40"/>
+                            <rect key="frame" x="25" y="127" width="325" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="F9W-rd-wht"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
-                            <state key="normal" title="Logout">
+                            <state key="normal" title="تسجيل الخروج">
                                 <color key="titleColor" red="0.85098039215686272" green="0.047058823529411764" blue="0.047058823529411764" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -99,59 +99,59 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fup-xM-s5w">
-                    <rect key="frame" x="0.0" y="32" width="414" height="448"/>
+                    <rect key="frame" x="0.0" y="-12" width="375" height="333.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-fl-2zP">
-                            <rect key="frame" x="183" y="47" width="48.5" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المزيد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-fl-2zP">
+                            <rect key="frame" x="162" y="47" width="51.5" height="24"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-Bg-HZl">
-                            <rect key="frame" x="16" y="96" width="382" height="30"/>
+                            <rect key="frame" x="16" y="96" width="343" height="30"/>
                             <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الإعدادات" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycn-bB-kBQ">
+                                    <rect key="frame" x="242.5" y="0.0" width="59.5" height="30"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                    <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings-cogwheel-button" translatesAutoresizingMaskIntoConstraints="NO" id="Lvf-9z-bOB">
-                                    <rect key="frame" x="8" y="5" width="25" height="20"/>
+                                    <rect key="frame" x="310" y="5" width="25" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="eHL-Rr-qSs"/>
                                         <constraint firstAttribute="height" constant="20" id="uL0-sT-cnB"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycn-bB-kBQ">
-                                    <rect key="frame" x="48" y="0.0" width="56" height="30"/>
-                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
-                                    <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
+                                <constraint firstItem="Lvf-9z-bOB" firstAttribute="leading" secondItem="Ycn-bB-kBQ" secondAttribute="trailing" constant="8" id="62A-Bf-XJe"/>
                                 <constraint firstItem="Ycn-bB-kBQ" firstAttribute="centerY" secondItem="qf8-Bg-HZl" secondAttribute="centerY" id="AdZ-gK-IEG"/>
                                 <constraint firstItem="Lvf-9z-bOB" firstAttribute="centerY" secondItem="qf8-Bg-HZl" secondAttribute="centerY" id="Ql4-D2-OwV"/>
                                 <constraint firstAttribute="height" constant="30" id="SAq-6q-5On"/>
-                                <constraint firstItem="Ycn-bB-kBQ" firstAttribute="leading" secondItem="Lvf-9z-bOB" secondAttribute="trailing" constant="15" id="ZVG-6a-rDH"/>
-                                <constraint firstItem="Lvf-9z-bOB" firstAttribute="leading" secondItem="qf8-Bg-HZl" secondAttribute="leading" constant="8" id="kbN-fQ-eUq"/>
+                                <constraint firstAttribute="trailing" secondItem="Lvf-9z-bOB" secondAttribute="trailing" constant="8" id="zj7-tV-kvc"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPA-g6-BpN">
-                            <rect key="frame" x="20" y="152" width="374" height="1"/>
+                            <rect key="frame" x="20" y="152" width="335" height="1"/>
                             <color key="backgroundColor" white="0.8029305793712328" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="iio-KW-FEZ"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP5-VW-ras">
-                            <rect key="frame" x="16" y="181" width="382" height="30"/>
+                            <rect key="frame" x="16" y="181" width="343" height="30"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="information" translatesAutoresizingMaskIntoConstraints="NO" id="Lcf-MW-wT7">
-                                    <rect key="frame" x="8" y="5" width="25" height="20"/>
+                                    <rect key="frame" x="310" y="5" width="25" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="Udc-64-L2k"/>
                                         <constraint firstAttribute="height" constant="20" id="Z7u-xM-IAg"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opp-NQ-3A2">
-                                    <rect key="frame" x="48" y="0.0" width="71.5" height="30"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اتصل بنا" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opp-NQ-3A2">
+                                    <rect key="frame" x="253" y="0.0" width="52" height="30"/>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
                                     <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
@@ -160,14 +160,14 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="Lcf-MW-wT7" firstAttribute="centerY" secondItem="TP5-VW-ras" secondAttribute="centerY" id="56x-LX-bZ5"/>
-                                <constraint firstItem="Lcf-MW-wT7" firstAttribute="leading" secondItem="TP5-VW-ras" secondAttribute="leading" constant="8" id="C0E-bE-m20"/>
+                                <constraint firstAttribute="trailing" secondItem="Lcf-MW-wT7" secondAttribute="trailing" constant="8" id="OaI-XK-wkl"/>
                                 <constraint firstItem="Opp-NQ-3A2" firstAttribute="centerY" secondItem="TP5-VW-ras" secondAttribute="centerY" id="WnM-qd-Me5"/>
                                 <constraint firstAttribute="height" constant="30" id="Xie-Ng-mSi"/>
-                                <constraint firstItem="Opp-NQ-3A2" firstAttribute="leading" secondItem="Lcf-MW-wT7" secondAttribute="trailing" constant="15" id="xuT-tk-EBj"/>
+                                <constraint firstItem="Lcf-MW-wT7" firstAttribute="leading" secondItem="Opp-NQ-3A2" secondAttribute="trailing" constant="5" id="YEG-fD-YT2"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-HJ-xV5">
-                            <rect key="frame" x="20" y="231" width="374" height="1"/>
+                            <rect key="frame" x="20" y="231" width="335" height="1"/>
                             <color key="backgroundColor" white="0.8029305793712328" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="AUs-w6-9iN"/>
@@ -206,7 +206,7 @@
                 <constraint firstItem="yyZ-C0-937" firstAttribute="trailing" secondItem="fup-xM-s5w" secondAttribute="trailing" id="yMh-uq-WCK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="yyZ-C0-937"/>
-            <point key="canvasLocation" x="224.63768115942031" y="139.95535714285714"/>
+            <point key="canvasLocation" x="223.19999999999999" y="139.880059970015"/>
         </view>
     </objects>
     <resources>

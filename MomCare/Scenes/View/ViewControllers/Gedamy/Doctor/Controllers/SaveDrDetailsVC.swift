@@ -12,13 +12,13 @@ class SaveDrDetailsVC: UIViewController {
 
     @IBOutlet weak var backBu: UIButton!
     @IBOutlet weak var saveBu: UIButton!
-    @IBOutlet weak var phoneLblTapped: LocalizableLabel!
-    @IBOutlet weak var whatsAppLbl: LocalizableLabel!
-    @IBOutlet weak var facebookLabel: LocalizableLabel!
-    
+    @IBOutlet weak var phoneLblTapped: UILabel!
+    @IBOutlet weak var whatsAppLbl: UILabel!
+    @IBOutlet weak var facebookLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.backBu.set(image: UIImage(named: "arrow_point"), title: "Back", titlePosition: .right, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        self.navigationController?.isNavigationBarHidden = true
+        self.backBu.set(image: UIImage(named: "next"), title: "رجوع", titlePosition: .left, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.saveBu.layer.cornerRadius = 20.0
         
         let facebookTap = UITapGestureRecognizer(target: self, action: #selector(facebookDidTapped(sender:)))
@@ -37,8 +37,18 @@ class SaveDrDetailsVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func editTimeBuTapped(_ sender: UIButton) {
+        self.handlePresentSegue(viewController: WorkDatesVC.self)
+    }
+    
+    @IBAction func editAddresBuTapped(_ sender: UIButton) {
+        let vc = MapVC(nibName: "MapVC", bundle: nil)
+        let nav = UINavigationController(rootViewController: vc)
+        self.view.window?.rootViewController = nav
+    }
+    
     @IBAction func saveBuTapped(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismissview()
     }
     
 }

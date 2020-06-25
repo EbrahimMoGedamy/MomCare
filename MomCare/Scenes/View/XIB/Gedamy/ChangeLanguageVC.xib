@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,15 +29,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvW-Yb-mTs">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-Ox-RNS">
-                            <rect key="frame" x="81.5" y="6" width="157" height="38"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إعدادات اللغة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-Ox-RNS">
+                            <rect key="frame" x="104" y="6" width="112.5" height="38"/>
                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
                             <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGm-XV-6P3">
-                            <rect key="frame" x="20" y="13" width="13.5" height="24"/>
-                            <state key="normal" backgroundImage="arrow_pointt"/>
+                            <rect key="frame" x="286" y="15" width="14" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="fts-xC-tlQ"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="right_arrow"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.25882352939999997" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,36 +48,37 @@
                         <constraint firstItem="Pc0-Ox-RNS" firstAttribute="centerX" secondItem="qvW-Yb-mTs" secondAttribute="centerX" id="50O-32-TIh"/>
                         <constraint firstAttribute="height" constant="50" id="6h0-AR-4Rh"/>
                         <constraint firstItem="fGm-XV-6P3" firstAttribute="centerY" secondItem="qvW-Yb-mTs" secondAttribute="centerY" id="A42-Mf-OS4"/>
-                        <constraint firstItem="fGm-XV-6P3" firstAttribute="leading" secondItem="qvW-Yb-mTs" secondAttribute="leading" constant="20" id="NzZ-QT-94a"/>
+                        <constraint firstItem="fGm-XV-6P3" firstAttribute="centerY" secondItem="Pc0-Ox-RNS" secondAttribute="centerY" id="aoj-ne-GK9"/>
+                        <constraint firstAttribute="trailing" secondItem="fGm-XV-6P3" secondAttribute="trailing" constant="20" id="uLB-vX-XYn"/>
                         <constraint firstItem="Pc0-Ox-RNS" firstAttribute="centerY" secondItem="qvW-Yb-mTs" secondAttribute="centerY" id="vgD-6Z-LO0"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0li-2s-nE3" customClass="RoundedCornerView" customModule="MomCare" customModuleProvider="target">
                     <rect key="frame" x="20" y="100" width="280" height="40"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-fh-o36">
-                            <rect key="frame" x="15" y="0.0" width="64.5" height="40"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-E3-POx">
-                            <rect key="frame" x="250" y="15" width="15" height="10"/>
+                            <rect key="frame" x="15" y="15" width="15" height="10"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="10" id="1f8-RJ-tDp"/>
                                 <constraint firstAttribute="width" constant="15" id="2nZ-lc-0xU"/>
                             </constraints>
                             <state key="normal" backgroundImage="drop_down_gray"/>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اللغة" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-fh-o36">
+                            <rect key="frame" x="235" y="0.0" width="29.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="3ew-0V-yeI"/>
                         <constraint firstItem="SSe-E3-POx" firstAttribute="centerY" secondItem="0li-2s-nE3" secondAttribute="centerY" id="6kD-u2-Azb"/>
                         <constraint firstItem="ugg-fh-o36" firstAttribute="centerY" secondItem="0li-2s-nE3" secondAttribute="centerY" id="D4D-aH-cub"/>
-                        <constraint firstAttribute="trailing" secondItem="SSe-E3-POx" secondAttribute="trailing" constant="15" id="L0G-qW-y3W"/>
                         <constraint firstItem="ugg-fh-o36" firstAttribute="top" secondItem="0li-2s-nE3" secondAttribute="top" id="OQ1-XH-WiA"/>
-                        <constraint firstItem="ugg-fh-o36" firstAttribute="leading" secondItem="0li-2s-nE3" secondAttribute="leading" constant="15" id="fgq-Vg-Hxe"/>
+                        <constraint firstItem="SSe-E3-POx" firstAttribute="leading" secondItem="0li-2s-nE3" secondAttribute="leading" constant="15" id="WIM-Sg-V1u"/>
+                        <constraint firstAttribute="trailing" secondItem="ugg-fh-o36" secondAttribute="trailing" constant="15.5" id="nqh-fD-2My"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -102,11 +106,11 @@
                 <constraint firstItem="0li-2s-nE3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kxc-vq-hwB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="154"/>
+            <point key="canvasLocation" x="131.25" y="153.16901408450704"/>
         </view>
     </objects>
     <resources>
-        <image name="arrow_pointt" width="13.5" height="24"/>
         <image name="drop_down_gray" width="18" height="9.5"/>
+        <image name="right_arrow" width="14" height="24"/>
     </resources>
 </document>

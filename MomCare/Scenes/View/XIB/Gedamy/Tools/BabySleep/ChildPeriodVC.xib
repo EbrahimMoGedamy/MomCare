@@ -37,12 +37,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff1-Nw-5kU">
-                            <rect key="frame" x="20" y="12.5" width="20" height="15"/>
+                            <rect key="frame" x="285" y="12.5" width="20" height="15"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="15" id="mBZ-PU-5kL"/>
                                 <constraint firstAttribute="width" constant="20" id="naK-BC-nvq"/>
                             </constraints>
-                            <state key="normal" image="arrow_point"/>
+                            <state key="normal" image="IQButtonBarArrowRight.png"/>
                             <connections>
                                 <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="FQ5-SX-xh8"/>
                             </connections>
@@ -52,41 +52,64 @@
                     <constraints>
                         <constraint firstItem="fvY-23-gey" firstAttribute="centerY" secondItem="jj6-9R-MSx" secondAttribute="centerY" id="2NK-Jo-vrY"/>
                         <constraint firstAttribute="height" constant="40" id="8oY-Hd-2gv"/>
+                        <constraint firstAttribute="trailing" secondItem="Ff1-Nw-5kU" secondAttribute="trailing" constant="15" id="KrE-ic-DiL"/>
                         <constraint firstItem="fvY-23-gey" firstAttribute="centerX" secondItem="jj6-9R-MSx" secondAttribute="centerX" id="N98-dW-jpN"/>
-                        <constraint firstItem="Ff1-Nw-5kU" firstAttribute="leading" secondItem="jj6-9R-MSx" secondAttribute="leading" constant="20" id="PGv-ss-52i"/>
                         <constraint firstItem="Ff1-Nw-5kU" firstAttribute="centerY" secondItem="fvY-23-gey" secondAttribute="centerY" id="beK-5F-gB9"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Mode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48i-cu-d9q">
-                    <rect key="frame" x="20" y="61" width="284" height="28.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نمط النوم" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48i-cu-d9q">
+                    <rect key="frame" x="242.5" y="61" width="61.5" height="28.5"/>
                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-tr-b8A">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-tr-b8A">
                     <rect key="frame" x="10" y="97.5" width="299" height="135"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="135" id="fD4-tD-4Pj"/>
                     </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <mutableString key="text">ينام الأطفال حديثو الولادة لمدة 16 ساعة أو أكثر في اليوم، ولكن غالبًا ما يكون ذلك على فترات تمتد لبضع ساعات فحسب. وعلى الرغم من أن هذا النمط قد يكون غير منتظم في البداية، فإن مواعيد النوم تصبح أكثر اتساقًا بالتزامن مع نمو الطفل ومن ثمَّ يتمكن من النوم لفترات أطول بين الرضاعة.
+
+بحلول الشهر الثالث إلى الرابع من الولادة، ينام العديد من الرضع خمس ساعات على الأقل في المرة الواحدة. وفي وقت ما خلال العام الأول للطفل، — سوف يبدأ في النوم لمدة 10 ساعات تقريبًا في كل ليلة، — ويختلف توقيت هذه المرحلة من طفل لآخر.
+
+اجعلي طفلك ينام في حجرتك
+
+وعلى نحو مثالي، ينبغي لطفلك أن ينام في حجرتك لكن وحده في مهده، أو في أي مكان معد للرضع، لمدة لا تقل عن 6 أشهر، وتمتد إلى عام، إذا سمحت الظروف. يمكن أن يقلل هذا الأمر من مخاطر الإصابة بمتلازمة موت الرضع المفاجئ (SIDS).
+
+الأسرة المعدة للبالغين ليست آمنة للرضع. من الممكن أن يختنق الرضيع إذا انحشر بين شرائح اللوحة الرأسية في مقدمة السرير، أو في المسافة التي بين المرتبة وإطار السرير، أو في المسافة التي بين المرتبة والحائط. ومن الممكن أيضًا أن يختنق الرضيع إذا انقلب عليه أحد الوالدين وغُطّي أنفه وفمه بطريق الخطأ.
+
+تشجيع عادات النوم الجيدة
+
+في الأشهر القليلة الأولى، من المؤكد أن مرات الرضاعة في منتصف الليل تقطع النوم لأولياء الأمور والرضع على السواء — لكن لا يفوت الوقت أبدًا لمساعدة رضيعك على النوم بشكل جيد. خذ بعين الاعتبار هذه النصائح:
+
+اتبعي نظامًا متسقًا مهدئًا لوقت النوم. التحفيز الزائد في المساء يمكن أن يزيد صعوبة هدوء طفلك لينام. جرّبي الاستحمام أو الاحتضان أو الغناء أو تشغيل الموسيقى الهادئة أو القراءة مع نقطة نهاية محددة بوضوح عندما تغادرين الغرفة. ابدئي بهذه النشاطات قبل أن يزيد تعب طفلك في غرفة هادئة بإضاءة خافتة.
+ضعي طفلك في الفراش وهو يشعر بالنعاس، ولكنه مستيقظ. سيساعد هذا طفلك على أن يربط السرير بعملية الدخول في النوم. تذكري وضع طفلك على ظهره عند الخلود إلى النوم، وأزيلي البطانيات وغيرها من الأشياء الناعمة من سرير الطفل أو مهده.
+امنحي طفلك وقتًا للهدوء. قد يقلق طفلك أو يبكي قبل أن يصل إلى وضع مريح ويخلد للنوم. إذا لم يتوقف الطفل، فافحصيه وقدمي له كلمات تشعره بالراحة واتركي الغرفة. قد يكون حضورِك المطمئن هو كل ما يحتاجه طفلك للنوم.
+فكّري في استخدام لهاية. إذا كانت ثمة مشكلة في تهدئة رضيعك، فقد تحقق اللهاية الغرض. الحقيقة أن الأبحاث تشير إلى أن استخدام لهاية أثناء النوم يساعد في الحد من خطر متلازمة وفاة الرضع المفاجئة.
+اجعلي الرعاية في الليل محدودة. عندما يحتاج طفلك إلى رعاية أو رضاعة أثناء الليل، فاستخدمي أضواء خافتة وصوتًا ناعمًا وحركات هادئة. سيبين هذا لطفلك أنه وقت النوم — وليس اللعب.
+احترمي تفضيلات طفلك. إذا كان طفلك يميل إلى السهر أو الاستيقاظ المبكر، فقد تحتاج إلى تعديل الأنظمة والمواعيد بناء على هذه الأنماط الطبيعية.</mutableString>
                     <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When my baby sleep fro long hours without anxiety" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4K-qX-Ka0">
-                    <rect key="frame" x="20" y="263.5" width="284" height="56.5"/>
-                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متي يبدأ طفلي بالنوم لساعات دون تقطع" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4K-qX-Ka0">
+                    <rect key="frame" x="10" y="263.5" width="294" height="26.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOX-GK-Uc0">
-                    <rect key="frame" x="10" y="328" width="299" height="135"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="WOX-GK-Uc0">
+                    <rect key="frame" x="10" y="298" width="299" height="135"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="135" id="xcj-rZ-Ugc"/>
                     </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <mutableString key="text">من المعروف أن الطفل يحتاج للإرضاع كل عدة ساعات، مما يستدعي أن الطفل في الغالب سيستيقظ مرة أو مرتين خلال الليل الطويل، وربما ليس هنا من مهرب من ضرورة الاستيقاظ معه، وتقديم وجبة الحليب، والغالب أن يعود مباشرة للنوم، وقد لا يستيقظ مرّة أخرى حتى الصباح. 
+
+والخبر السعيد، أن الفترة بين الرضعات أو الوجبات تتباعد مع الوقت، بحيث في وقت قصير يمكن أن يشمل كل الليل، ويتناول الطفل آخر وجبة في المساء، ومن ثم يخلد للنوم، ولا يحتاج لأي وجبة حتى الصباح، ولكن قد يستيقظ الطفل ليلا بين الحين والآخر، ويفضل هنا الاستيقاظ معه، ولو لفترة قصير جدا، للاطمئنان عليه، والعودة للنوم، ولابد من محاولة تعويد الطفل على نظام معين في حياته، وخاصة موضوع التغذية والحمام والنوم.
+
+وتختلف مرحلة فطام الطفل من طفل لآخر، والعادة أنه منذ عمر السنة أو السنة والنصف تبدأ الأم تضيف بإضافة بعض الوجبات لإكمال وجبة الإرضاع، باستعمال الأغذية الخاصة بالأطفال الرضع، ويمكن أن أطلب من الزملاء في هذا الموقع إحالة هذا الجانب لأخصائي الأطفال والتغذية.</mutableString>
                     <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -105,16 +128,16 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jj6-9R-MSx" secondAttribute="trailing" id="KaX-eG-tGR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Pa-tr-b8A" secondAttribute="trailing" constant="11" id="cYb-1L-660"/>
                 <constraint firstItem="P4K-qX-Ka0" firstAttribute="trailing" secondItem="48i-cu-d9q" secondAttribute="trailing" id="gIe-64-aJ5"/>
-                <constraint firstItem="48i-cu-d9q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kMi-Qs-UvP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P4K-qX-Ka0" secondAttribute="trailing" constant="16" id="hEc-ZZ-O0g"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="48i-cu-d9q" secondAttribute="trailing" constant="16" id="rz6-vy-gH2"/>
+                <constraint firstItem="P4K-qX-Ka0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="sO6-FW-cks"/>
                 <constraint firstItem="6Pa-tr-b8A" firstAttribute="top" secondItem="48i-cu-d9q" secondAttribute="bottom" constant="8" id="v3Y-mq-sj7"/>
-                <constraint firstItem="P4K-qX-Ka0" firstAttribute="leading" secondItem="48i-cu-d9q" secondAttribute="leading" id="vM1-Lk-Q13"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.75" y="141.5492957746479"/>
         </view>
     </objects>
     <resources>
-        <image name="arrow_point" width="13.5" height="24"/>
+        <image name="IQButtonBarArrowRight.png" width="12" height="21"/>
     </resources>
 </document>

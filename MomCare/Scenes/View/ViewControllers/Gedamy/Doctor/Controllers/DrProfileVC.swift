@@ -21,8 +21,8 @@ class DrProfileVC: UIViewController {
     
         self.navigationController?.isNavigationBarHidden = true
         self.profileImg.layer.cornerRadius = 25.0
-        self.myDeatailsBu.set(image: UIImage(named: "book (2)"), title: "My Details", titlePosition: .bottom, additionalSpacing: -8.0, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-        self.moreBu.set(image: UIImage(named: "book (2)"), title: "More", titlePosition: .bottom, additionalSpacing: -8.0, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        self.myDeatailsBu.set(image: UIImage(named: "doctor-3.png"), title: "بياناتي", titlePosition: .bottom, additionalSpacing: -10.0, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        self.moreBu.set(image: UIImage(named: "iconfinder_more_126574-3.png"), title: "المزيد", titlePosition: .bottom, additionalSpacing: -8.0, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.bootomContentView.addShadow(location: .top, color: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), opacity: 0.2, radius: 5.0)
         
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -29,17 +29,21 @@
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPu-5f-Iwr">
                         <rect key="frame" x="283" y="20" width="20" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="Ii8-mk-ccK"/>
                             <constraint firstAttribute="height" constant="20" id="RHk-hi-c8y"/>
                         </constraints>
-                        <state key="normal" image="album"/>
+                        <color key="tintColor" red="0.08235294118" green="0.6705882353" blue="0.75686274509999996" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" image="bookmark" catalog="system">
+                            <color key="titleColor" red="0.08235294118" green="0.6705882353" blue="0.75686274509999996" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
                         <connections>
                             <action selector="savedBuTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="igV-qc-JHF"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pregnancy with tenth baby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMF-r4-w6J">
-                        <rect key="frame" x="10" y="115" width="190.5" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="علامات للحمل بولد 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMF-r4-w6J">
+                        <rect key="frame" x="191" y="115" width="122" height="16"/>
                         <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
                         <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
@@ -52,8 +56,8 @@
                     <constraint firstItem="UaD-5j-odq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LfU-5l-2l5"/>
                     <constraint firstAttribute="trailing" secondItem="UaD-5j-odq" secondAttribute="trailing" constant="10" id="X63-LJ-ARe"/>
                     <constraint firstItem="AMF-r4-w6J" firstAttribute="top" secondItem="UaD-5j-odq" secondAttribute="bottom" constant="5" id="bkd-ug-1vJ"/>
-                    <constraint firstItem="AMF-r4-w6J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cUA-3b-91j"/>
                     <constraint firstItem="UaD-5j-odq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mbg-nI-txm"/>
+                    <constraint firstAttribute="trailing" secondItem="AMF-r4-w6J" secondAttribute="trailing" constant="10" id="yut-NO-OQs"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -66,6 +70,6 @@
     </objects>
     <resources>
         <image name="133-022508-postpartum-depression-common-new-parents_700x400" width="107" height="107"/>
-        <image name="album" width="206.5" height="203.5"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
     </resources>
 </document>

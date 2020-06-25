@@ -34,16 +34,15 @@
                             <color key="textColor" red="0.08235294118" green="0.66274509800000003" blue="0.74901960779999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-Sg-40o">
-                            <rect key="frame" x="20" y="12.5" width="20" height="15"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-Sg-40o">
+                            <rect key="frame" x="280" y="12.5" width="20" height="15"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="pIc-O5-k3n"/>
                                 <constraint firstAttribute="height" constant="15" id="v0X-Jk-re7"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="right_arrow">
+                                <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="u2s-ja-kLQ"/>
@@ -56,7 +55,7 @@
                         <constraint firstItem="lU3-Sg-40o" firstAttribute="centerY" secondItem="aPD-wq-j3k" secondAttribute="centerY" id="AJL-XK-fI2"/>
                         <constraint firstItem="aPD-wq-j3k" firstAttribute="top" secondItem="6WR-F3-C5Q" secondAttribute="top" constant="20" id="TwC-po-Bu5"/>
                         <constraint firstAttribute="height" constant="50" id="Yr7-zH-ji1"/>
-                        <constraint firstItem="lU3-Sg-40o" firstAttribute="leading" secondItem="6WR-F3-C5Q" secondAttribute="leading" constant="20" id="xsA-Pc-bBV"/>
+                        <constraint firstAttribute="trailing" secondItem="lU3-Sg-40o" secondAttribute="trailing" constant="20" id="riP-R4-orS"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-A7-Tje">
@@ -79,4 +78,7 @@
             <point key="canvasLocation" x="69.565217391304358" y="130.58035714285714"/>
         </view>
     </objects>
+    <resources>
+        <image name="right_arrow" width="14" height="24"/>
+    </resources>
 </document>

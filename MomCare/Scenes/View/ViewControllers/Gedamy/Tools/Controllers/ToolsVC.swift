@@ -13,7 +13,7 @@ class ToolsVC: UIViewController {
     @IBOutlet weak var searchTxtField: UITextField!{
         didSet {
             searchTxtField.tintColor = UIColor.lightGray
-            searchTxtField.setIcon(#imageLiteral(resourceName: "search"))
+//            searchTxtField.setIcon(#imageLiteral(resourceName: "search"))
         }
     }
     @IBOutlet weak var toolsCollView: UICollectionView!
@@ -27,7 +27,7 @@ class ToolsVC: UIViewController {
     }
     
     var nutrionNeeded : NutritionNeededVC?
-    var arrData : [String] = ["Checks","Pregnant Nutrition","Baby Nutrition","Baby Sleep Guide"]
+    var arrData : [String] = ["الفحوصات","تغذية الحامل","تغذية الطفل","دليل نوم الطفل"]
     var arrFilterData : [String] = []
     var isSearch : Bool = false
     var toolsPresenter : ToolsPresenter?

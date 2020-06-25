@@ -20,7 +20,7 @@ class MedicalGuideVC: UIViewController {
     @IBOutlet weak var searchTxtField: UITextField!{
         didSet {
             searchTxtField.tintColor = #colorLiteral(red: 0.2235294118, green: 0.7647058824, blue: 0.8, alpha: 1)
-            searchTxtField.setIcon(#imageLiteral(resourceName: "search"))
+//            searchTxtField.setIcon(#imageLiteral(resourceName: "search"))
             searchTxtField.layer.cornerRadius = 5.0
         }
     }
@@ -46,11 +46,20 @@ class MedicalGuideVC: UIViewController {
     "4126066-2012852796",
     "Nutrition-Articles---Mother-to-be-1"]
     
-    var titleArr = ["You and your baby",
-    "Breastfeeding",
-    "Childbirth",
-    "Health of baby and mom",
-    "Food and sport",
-    "Parents"]
+    var images = ["1021040990","191204091026435_كيف-اعتني-بطفلي-في-الشهر-الثاني-1","4126066-2012852796","1021040990","1021040990",]
+    var titles = ["أفضل الاوقات لحدوث الحمل",
+    "السفر مع الرضيع",
+    "علامات للحمل بولد 10",
+    "صحة الام والطفل",
+    "التغذية والرياضة",
+    "الآباء"]
+    
+    var titleArr = ["أنت وطفلك",
+    "الرضاعة",
+    "الولادة",
+    "صحة الام والطفل",
+    "التغذية والرياضة",
+    "الآباء"]
 
+    var objectsImages = ["191204091026435_كيف-اعتني-بطفلي-في-الشهر-الثاني-1","4126066-2012852796","1021040990","2018_2_24_14_19_22_952","Eating-for-a-healthy-pregnancy-resized","133-022508-postpartum-depression-common-new-parents_700x400"]
 }

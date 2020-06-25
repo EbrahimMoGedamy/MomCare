@@ -15,7 +15,7 @@ class SettingsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.backBu.set(image: UIImage(named: "arrow_point"), title: "", titlePosition: .right, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        self.backBu.set(image: UIImage(named: "right_arrow"), title: "", titlePosition: .right, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.navigationController?.navigationBar.isHidden = true
     }
 
@@ -26,7 +26,8 @@ class SettingsVC: UIViewController {
     }
     
     @IBAction func changeLanguageBtn(_ sender: Any) {
-        handlePushSegue(viewController: ChangeLanguageVC.self)
+//        handlePushSegue(viewController: ChangeLanguageVC.self)
+        
     }
     
     

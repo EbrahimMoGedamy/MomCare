@@ -33,7 +33,9 @@ class MoreVC: UIViewController {
     }
     
     @IBAction func logOutBuTapped(_ sender: LocalizableButton) {
-        
+        let vc = LoginVC(nibName: "LoginVC", bundle: nil)
+        let nav = UINavigationController(rootViewController: vc)
+        self.view.window?.rootViewController = nav
     }
 
     // 3. this method is called when a tap is recognized

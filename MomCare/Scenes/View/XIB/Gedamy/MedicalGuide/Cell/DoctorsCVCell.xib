@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,155 +28,140 @@
                         <rect key="frame" x="0.0" y="44" width="270" height="216"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sd" translatesAutoresizingMaskIntoConstraints="NO" id="gut-j8-tyh">
-                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                <rect key="frame" x="205" y="15" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="mbs-D5-2iF"/>
                                     <constraint firstAttribute="height" constant="50" id="nVR-aN-oSM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ep-YK-8tn">
-                                <rect key="frame" x="73" y="21.5" width="20" height="37.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دكتور" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ep-YK-8tn">
+                                <rect key="frame" x="152" y="21.5" width="49" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
                                 <color key="textColor" red="0.077752885150000006" green="0.62812354640000001" blue="0.70788388319999995" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zyad Ayman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-eK-46E">
-                                <rect key="frame" x="95" y="21.5" width="104.5" height="37.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="زياد أيمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-eK-46E">
+                                <rect key="frame" x="75.5" y="21.5" width="73.5" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
                                 <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-Mi-eev">
-                                <rect key="frame" x="102.5" y="117" width="32.5" height="32"/>
+                                <rect key="frame" x="84.5" y="115" width="32.5" height="32"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                 <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4P-ki-tlj">
-                                <rect key="frame" x="130.5" y="149" width="32.5" height="38.5"/>
+                                <rect key="frame" x="50" y="147" width="32.5" height="32"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                 <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-H0-mil">
-                                <rect key="frame" x="198" y="149" width="32.5" height="38.5"/>
+                                <rect key="frame" x="124.5" y="147" width="32.5" height="32"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                 <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daily from" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-p8-aex">
-                                <rect key="frame" x="32" y="117" width="63" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يومياً من" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-p8-aex">
+                                <rect key="frame" x="183.5" y="117" width="55.5" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hky-fb-Vf5">
-                                <rect key="frame" x="143" y="117" width="15" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إلي" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hky-fb-Vf5">
+                                <rect key="frame" x="120" y="115" width="25" height="32"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI1-hK-e1G">
-                                <rect key="frame" x="168" y="117" width="32.5" height="32"/>
+                                <rect key="frame" x="148" y="115" width="32.5" height="32"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                 <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thrusday from " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-px-5kS">
-                                <rect key="frame" x="32" y="154" width="93.5" height="28.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الخميس من" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-px-5kS">
+                                <rect key="frame" x="165" y="149" width="74" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="available dialy except" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-Uk-BRw">
-                                <rect key="frame" x="32" y="72" width="132.5" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متاح يومياً، عدا" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-Uk-BRw">
+                                <rect key="frame" x="149" y="75.5" width="90" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-Oa-nnV">
-                                <rect key="frame" x="173" y="149" width="15" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إلي" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-Oa-nnV">
+                                <rect key="frame" x="93" y="147" width="25" height="32"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="sunday  monday" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fc-9M-jVb">
-                                <rect key="frame" x="169.5" y="72" width="95.5" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الجمعة والسبت" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fc-9M-jVb">
+                                <rect key="frame" x="44.5" y="75.5" width="96" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="1vX-IK-IUv">
-                                <rect key="frame" x="5" y="77" width="20" height="25"/>
+                                <rect key="frame" x="242" y="77" width="20" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="ARL-hJ-uXG"/>
                                     <constraint firstAttribute="width" constant="20" id="l1H-2d-3w9"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock-circular-outline" translatesAutoresizingMaskIntoConstraints="NO" id="jkV-AA-h9J">
-                                <rect key="frame" x="5" y="123" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="063-pH-vKb"/>
-                                    <constraint firstAttribute="height" constant="20" id="Hwy-Qn-A93"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call-answer" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-hM-Tof">
-                                <rect key="frame" x="5" y="192.5" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="2dS-f6-9j3"/>
-                                    <constraint firstAttribute="width" constant="20" id="nhx-mI-haN"/>
-                                </constraints>
+                                <rect key="frame" x="246" y="123" width="16" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0100999899" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZd-dv-LdW">
-                                <rect key="frame" x="32" y="188.5" width="84.5" height="28.5"/>
+                                <rect key="frame" x="156" y="181.5" width="84.5" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call-answer" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-hM-Tof">
+                                <rect key="frame" x="245.5" y="188" width="16.5" height="16"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ck0-H0-mil" firstAttribute="leading" secondItem="kXE-Oa-nnV" secondAttribute="trailing" constant="10" id="0c1-FH-X6N"/>
-                            <constraint firstItem="JZd-dv-LdW" firstAttribute="centerY" secondItem="pRf-hM-Tof" secondAttribute="centerY" id="1vu-Uz-KMd"/>
-                            <constraint firstItem="hI1-hK-e1G" firstAttribute="centerY" secondItem="hky-fb-Vf5" secondAttribute="centerY" id="3xN-aO-7IJ"/>
-                            <constraint firstItem="9ep-YK-8tn" firstAttribute="leading" secondItem="gut-j8-tyh" secondAttribute="trailing" constant="8" id="5Ym-CN-5vx"/>
-                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="top" secondItem="hI1-hK-e1G" secondAttribute="bottom" id="6QI-CR-wdL"/>
-                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="leading" secondItem="k4P-ki-tlj" secondAttribute="trailing" constant="10" id="9Hy-34-NHP"/>
-                            <constraint firstItem="Ck0-H0-mil" firstAttribute="centerY" secondItem="kXE-Oa-nnV" secondAttribute="centerY" id="AnP-ZB-uzQ"/>
-                            <constraint firstItem="JZd-dv-LdW" firstAttribute="leading" secondItem="pRf-hM-Tof" secondAttribute="trailing" constant="7" id="HcV-vP-ChA"/>
-                            <constraint firstItem="pRf-hM-Tof" firstAttribute="top" secondItem="XxC-px-5kS" secondAttribute="bottom" constant="10" id="IU9-5i-JRs"/>
-                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="top" secondItem="w2e-p8-aex" secondAttribute="top" id="IfQ-Yi-tfr"/>
-                            <constraint firstItem="k4P-ki-tlj" firstAttribute="centerY" secondItem="XxC-px-5kS" secondAttribute="centerY" id="K2O-8h-pOP"/>
-                            <constraint firstItem="jkV-AA-h9J" firstAttribute="centerY" secondItem="w2e-p8-aex" secondAttribute="centerY" id="Kem-Yi-b7E"/>
-                            <constraint firstItem="1vX-IK-IUv" firstAttribute="centerY" secondItem="Nl2-Uk-BRw" secondAttribute="centerY" id="LPq-t1-ke4"/>
-                            <constraint firstItem="XxC-px-5kS" firstAttribute="leading" secondItem="w2e-p8-aex" secondAttribute="leading" id="N6e-PD-6ci"/>
-                            <constraint firstItem="Qn8-eK-46E" firstAttribute="leading" secondItem="9ep-YK-8tn" secondAttribute="trailing" constant="2" id="Phk-bz-NPI"/>
-                            <constraint firstItem="7fc-9M-jVb" firstAttribute="leading" secondItem="Nl2-Uk-BRw" secondAttribute="trailing" constant="5" id="Se2-2w-aSR"/>
-                            <constraint firstItem="XxC-px-5kS" firstAttribute="trailing" secondItem="k4P-ki-tlj" secondAttribute="leading" constant="-5" id="UBy-UQ-sXl"/>
-                            <constraint firstItem="pRf-hM-Tof" firstAttribute="leading" secondItem="jkV-AA-h9J" secondAttribute="leading" id="VIc-VZ-yxr"/>
-                            <constraint firstItem="hky-fb-Vf5" firstAttribute="leading" secondItem="gJ8-Mi-eev" secondAttribute="trailing" constant="8" id="Vzc-Du-AjH"/>
-                            <constraint firstItem="w2e-p8-aex" firstAttribute="top" secondItem="Nl2-Uk-BRw" secondAttribute="bottom" constant="10" id="WiP-u6-Yee"/>
-                            <constraint firstItem="k4P-ki-tlj" firstAttribute="top" secondItem="gJ8-Mi-eev" secondAttribute="bottom" id="XdQ-ou-ubZ"/>
+                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="leading" secondItem="k4P-ki-tlj" secondAttribute="trailing" constant="10.5" id="0p4-jf-kGb"/>
+                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="centerY" secondItem="Ck0-H0-mil" secondAttribute="centerY" id="0rp-xr-NSk"/>
+                            <constraint firstAttribute="trailing" secondItem="gut-j8-tyh" secondAttribute="trailing" constant="15" id="9fu-dT-ENw"/>
+                            <constraint firstItem="Ck0-H0-mil" firstAttribute="centerY" secondItem="XxC-px-5kS" secondAttribute="centerY" id="AVZ-zV-aTy"/>
+                            <constraint firstItem="hky-fb-Vf5" firstAttribute="leading" secondItem="gJ8-Mi-eev" secondAttribute="trailing" constant="3" id="CVE-bq-ppT"/>
+                            <constraint firstItem="Nl2-Uk-BRw" firstAttribute="leading" secondItem="7fc-9M-jVb" secondAttribute="trailing" constant="8.5" id="Dlk-Zx-RXb"/>
+                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="centerY" secondItem="hky-fb-Vf5" secondAttribute="centerY" id="E0W-wb-IlN"/>
+                            <constraint firstItem="pRf-hM-Tof" firstAttribute="trailing" secondItem="jkV-AA-h9J" secondAttribute="trailing" id="GYd-xT-Kcs"/>
+                            <constraint firstItem="XxC-px-5kS" firstAttribute="leading" secondItem="Ck0-H0-mil" secondAttribute="trailing" constant="8" id="Hx7-Om-Aj2"/>
+                            <constraint firstItem="Ck0-H0-mil" firstAttribute="leading" secondItem="kXE-Oa-nnV" secondAttribute="trailing" constant="6.5" id="L6B-hp-2Na"/>
+                            <constraint firstItem="hI1-hK-e1G" firstAttribute="centerY" secondItem="w2e-p8-aex" secondAttribute="centerY" id="OIE-LB-gKI"/>
+                            <constraint firstAttribute="trailing" secondItem="1vX-IK-IUv" secondAttribute="trailing" constant="8" id="QCs-e5-Mja"/>
+                            <constraint firstItem="Nl2-Uk-BRw" firstAttribute="centerY" secondItem="1vX-IK-IUv" secondAttribute="centerY" id="QFt-2e-3Rp"/>
+                            <constraint firstItem="9ep-YK-8tn" firstAttribute="leading" secondItem="Qn8-eK-46E" secondAttribute="trailing" constant="3" id="R3J-dO-3YQ"/>
+                            <constraint firstItem="w2e-p8-aex" firstAttribute="leading" secondItem="hI1-hK-e1G" secondAttribute="trailing" constant="3" id="TSL-RW-urw"/>
+                            <constraint firstItem="XxC-px-5kS" firstAttribute="top" secondItem="w2e-p8-aex" secondAttribute="bottom" constant="3.5" id="Uyd-dJ-vWA"/>
+                            <constraint firstItem="pRf-hM-Tof" firstAttribute="leading" secondItem="JZd-dv-LdW" secondAttribute="trailing" constant="5" id="Vs4-Yy-lrD"/>
+                            <constraint firstItem="jkV-AA-h9J" firstAttribute="top" secondItem="1vX-IK-IUv" secondAttribute="bottom" constant="21" id="Z1w-kz-Jbe"/>
                             <constraint firstItem="1vX-IK-IUv" firstAttribute="top" secondItem="gut-j8-tyh" secondAttribute="bottom" constant="12" id="ZPd-xT-qrK"/>
-                            <constraint firstItem="gut-j8-tyh" firstAttribute="leading" secondItem="hnd-bx-61J" secondAttribute="leading" constant="15" id="Zg4-79-yiw"/>
-                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="leading" secondItem="w2e-p8-aex" secondAttribute="trailing" constant="7.5" id="a2j-G2-QXX"/>
+                            <constraint firstItem="7fc-9M-jVb" firstAttribute="centerY" secondItem="Nl2-Uk-BRw" secondAttribute="centerY" id="aTS-Eh-2ZG"/>
+                            <constraint firstItem="pRf-hM-Tof" firstAttribute="top" secondItem="XxC-px-5kS" secondAttribute="bottom" constant="10.5" id="aXH-W4-vqD"/>
                             <constraint firstItem="Qn8-eK-46E" firstAttribute="centerY" secondItem="9ep-YK-8tn" secondAttribute="centerY" id="cCO-fe-oOv"/>
-                            <constraint firstAttribute="trailing" secondItem="7fc-9M-jVb" secondAttribute="trailing" constant="5" id="chf-Zi-pwY"/>
-                            <constraint firstItem="hI1-hK-e1G" firstAttribute="leading" secondItem="hky-fb-Vf5" secondAttribute="trailing" constant="10" id="dgl-p8-G4S"/>
-                            <constraint firstItem="w2e-p8-aex" firstAttribute="leading" secondItem="Nl2-Uk-BRw" secondAttribute="leading" id="g5k-tJ-sTC"/>
-                            <constraint firstItem="1vX-IK-IUv" firstAttribute="leading" secondItem="hnd-bx-61J" secondAttribute="leading" constant="5" id="hSh-Hi-Acd"/>
-                            <constraint firstItem="jkV-AA-h9J" firstAttribute="leading" secondItem="1vX-IK-IUv" secondAttribute="leading" id="iXF-rH-jri"/>
+                            <constraint firstItem="k4P-ki-tlj" firstAttribute="centerY" secondItem="kXE-Oa-nnV" secondAttribute="centerY" id="hXh-mI-AfK"/>
                             <constraint firstItem="gut-j8-tyh" firstAttribute="top" secondItem="hnd-bx-61J" secondAttribute="top" constant="15" id="iae-rp-68k"/>
-                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="centerY" secondItem="w2e-p8-aex" secondAttribute="centerY" id="igH-LF-yeu"/>
+                            <constraint firstItem="jkV-AA-h9J" firstAttribute="leading" secondItem="w2e-p8-aex" secondAttribute="trailing" constant="7" id="kRO-dv-YOT"/>
+                            <constraint firstItem="hI1-hK-e1G" firstAttribute="leading" secondItem="hky-fb-Vf5" secondAttribute="trailing" constant="3" id="ki3-Wi-JPh"/>
+                            <constraint firstItem="hky-fb-Vf5" firstAttribute="centerY" secondItem="hI1-hK-e1G" secondAttribute="centerY" id="lRG-HP-iba"/>
                             <constraint firstItem="9ep-YK-8tn" firstAttribute="centerY" secondItem="gut-j8-tyh" secondAttribute="centerY" id="lgb-MZ-iFu"/>
-                            <constraint firstItem="jkV-AA-h9J" firstAttribute="top" secondItem="1vX-IK-IUv" secondAttribute="bottom" constant="21" id="nhN-t6-XCW"/>
-                            <constraint firstItem="hky-fb-Vf5" firstAttribute="centerY" secondItem="gJ8-Mi-eev" secondAttribute="centerY" id="qB1-Gx-Ybx"/>
-                            <constraint firstItem="7fc-9M-jVb" firstAttribute="centerY" secondItem="Nl2-Uk-BRw" secondAttribute="centerY" id="rs8-zZ-QfA"/>
-                            <constraint firstItem="w2e-p8-aex" firstAttribute="leading" secondItem="jkV-AA-h9J" secondAttribute="trailing" constant="7" id="sSV-WT-8u2"/>
-                            <constraint firstItem="XxC-px-5kS" firstAttribute="top" secondItem="w2e-p8-aex" secondAttribute="bottom" constant="5" id="t7K-59-RHZ"/>
-                            <constraint firstItem="Ck0-H0-mil" firstAttribute="top" secondItem="hI1-hK-e1G" secondAttribute="bottom" id="w5S-sI-Y3u"/>
-                            <constraint firstItem="hI1-hK-e1G" firstAttribute="top" secondItem="7fc-9M-jVb" secondAttribute="bottom" constant="10" id="wG5-p4-OeC"/>
-                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="centerY" secondItem="k4P-ki-tlj" secondAttribute="centerY" id="z8L-3o-pLf"/>
+                            <constraint firstItem="JZd-dv-LdW" firstAttribute="centerY" secondItem="pRf-hM-Tof" secondAttribute="centerY" id="mzq-2J-F6D"/>
+                            <constraint firstAttribute="trailing" secondItem="jkV-AA-h9J" secondAttribute="trailing" constant="8" id="qWp-0s-ALW"/>
+                            <constraint firstItem="XxC-px-5kS" firstAttribute="trailing" secondItem="w2e-p8-aex" secondAttribute="trailing" id="sKd-g0-2rL"/>
+                            <constraint firstItem="gut-j8-tyh" firstAttribute="leading" secondItem="9ep-YK-8tn" secondAttribute="trailing" constant="4" id="sZu-JN-fRd"/>
+                            <constraint firstItem="1vX-IK-IUv" firstAttribute="leading" secondItem="Nl2-Uk-BRw" secondAttribute="trailing" constant="3" id="w04-n7-Aw3"/>
+                            <constraint firstItem="w2e-p8-aex" firstAttribute="centerY" secondItem="jkV-AA-h9J" secondAttribute="centerY" id="xq1-Pg-9Td"/>
                         </constraints>
                     </view>
                 </subviews>

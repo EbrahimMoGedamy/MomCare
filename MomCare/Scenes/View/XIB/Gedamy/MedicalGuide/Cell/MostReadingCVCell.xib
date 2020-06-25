@@ -21,15 +21,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="191204091026435_كيف-اعتني-بطفلي-في-الشهر-الثاني-1" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-D8-2V6">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1021040990" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-D8-2V6">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="130" id="bEH-w0-MSm"/>
+                            <constraint firstAttribute="height" constant="110" id="bEH-w0-MSm"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Travel with baby" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xz-TL-XbT">
-                        <rect key="frame" x="0.0" y="130" width="100" height="20"/>
-                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="السفر مع الرضيع" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xz-TL-XbT">
+                        <rect key="frame" x="0.0" y="110" width="100" height="40"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -53,6 +53,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="191204091026435_كيف-اعتني-بطفلي-في-الشهر-الثاني-1" width="107" height="107"/>
+        <image name="1021040990" width="107" height="107"/>
     </resources>
 </document>

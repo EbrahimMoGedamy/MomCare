@@ -17,14 +17,14 @@ class BabySleepVC: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             self.navigationController?.navigationBar.isHidden = true
-            self.backBu.set(image: UIImage(named: "arrow_point"), title: "", titlePosition: .right, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+            self.backBu.set(image: UIImage(named: "next"), title: "", titlePosition: .left, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
             self.titleLbl.text = self.titleName
             self.setupTableView(tableView: self.babySleepTableView)
         }
         
         var titleName = ""
         
-        var childbirthArr = ["From childbirth to 3 months","From 3 to 6 months","From 6 to 9 months","From 9 to 12 months"]
+        var childbirthArr = ["من الولادة إلي 3 أشهر","من 3 أشهر إلي 6 أشهر","من 6 أشهر إلي 9 أشهر","من 9 أشهر إلي 12  شهر"]
         
         @IBAction func backBuTapped(_ sender: LocalizableButton) {
             let vc = ToolsVC(nibName: "ToolsVC", bundle: nil)

@@ -77,6 +77,7 @@ class MyProfileVC: UIViewController {
     
     @IBAction func saveBuTapped(_ sender: LocalizableButton) {
         self.setTextFieldData(state: false)
+        self.handlePushSegue(viewController: MoreVC.self)
     }
     
     @IBAction func editMobileBuTapped(_ sender: UIButton) {
@@ -90,6 +91,11 @@ class MyProfileVC: UIViewController {
     @IBAction func editPasswordBuTapped(_ sender: UIButton) {
         self.passwordTxtField.isUserInteractionEnabled = true
     }
+    
+    @IBAction func backBuTapped(_ sender: Any) {
+        self.handlePushSegue(viewController: MoreVC.self)
+    }
+    
     
 }
 

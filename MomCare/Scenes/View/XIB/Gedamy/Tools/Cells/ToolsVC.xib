@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,8 +26,8 @@
                         <constraint firstAttribute="height" constant="50" id="x3q-En-eVO"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWZ-Zp-Pul">
-                    <rect key="frame" x="20" y="30" width="83" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الأدوات" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWZ-Zp-Pul">
+                    <rect key="frame" x="219" y="30" width="71" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="BVA-0R-cMg"/>
                     </constraints>
@@ -48,7 +48,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJP-Wd-L3J" customClass="RoundedView" customModule="MomCare" customModuleProvider="target">
                     <rect key="frame" x="20" y="80" width="280" height="40"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-pj-9vS">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="بحث" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-pj-9vS">
                             <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -78,10 +78,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y84-PN-Q9f" secondAttribute="bottom" id="Fef-FX-AOT"/>
                 <constraint firstItem="sha-2E-9Az" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HEs-RU-fBr"/>
                 <constraint firstItem="sha-2E-9Az" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IIQ-Sf-nLt"/>
-                <constraint firstItem="xWZ-Zp-Pul" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Rii-1r-a4B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y84-PN-Q9f" secondAttribute="trailing" constant="15" id="V3L-sv-mBu"/>
                 <constraint firstItem="cJP-Wd-L3J" firstAttribute="top" secondItem="xWZ-Zp-Pul" secondAttribute="bottom" constant="20" id="bAZ-iO-yD4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sha-2E-9Az" secondAttribute="trailing" id="eRN-v6-DDf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xWZ-Zp-Pul" secondAttribute="trailing" constant="30" id="qCh-P5-pOB"/>
                 <constraint firstItem="xWZ-Zp-Pul" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="tAl-y1-AAO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

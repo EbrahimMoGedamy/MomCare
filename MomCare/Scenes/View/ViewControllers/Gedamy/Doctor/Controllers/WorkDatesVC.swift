@@ -24,6 +24,7 @@ class WorkDatesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        self.navigationController?.isNavigationBarHidden = true
         self.creatTimePickerView(textField: startTime)
         self.creatTimePickerView(textField: endTime)
         creatToolBar(text: endTime)
@@ -31,7 +32,7 @@ class WorkDatesVC: UIViewController {
         startTime.inputAccessoryView = toolBar
         endTime.inputAccessoryView = toolBar
         self.changeTimeStackview.isHidden = true
-        backBu.set(image: UIImage(named: "arrow_point"), title: "Back", titlePosition: .right, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        backBu.set(image: UIImage(named: "next"), title: "رجوع", titlePosition: .left, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
     }
 
     var toolBar = UIToolbar()
@@ -39,7 +40,7 @@ class WorkDatesVC: UIViewController {
     
     
     @IBAction func backBuTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismissview()
     }
     
     

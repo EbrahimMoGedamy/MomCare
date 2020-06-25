@@ -40,17 +40,30 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iz3-q2-sqF">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT5-Gf-f2u">
-                                            <rect key="frame" x="150.5" y="6.5" width="74" height="32"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الملف الشخصي" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT5-Gf-f2u">
+                                            <rect key="frame" x="131" y="6.5" width="113" height="32"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F2-DX-u34">
+                                            <rect key="frame" x="335" y="15" width="20" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="RVd-VU-ff6"/>
+                                                <constraint firstAttribute="height" constant="15" id="lNr-0p-fSW"/>
+                                            </constraints>
+                                            <state key="normal" image="right_arrow"/>
+                                            <connections>
+                                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="I2o-Z9-0h6"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.082352941176470587" green="0.6705882352941176" blue="0.75686274509803919" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="BKu-qJ-vqg"/>
                                         <constraint firstItem="iT5-Gf-f2u" firstAttribute="centerX" secondItem="iz3-q2-sqF" secondAttribute="centerX" id="Eld-by-baW"/>
+                                        <constraint firstAttribute="trailing" secondItem="8F2-DX-u34" secondAttribute="trailing" constant="20" id="V9m-bh-rPh"/>
+                                        <constraint firstItem="8F2-DX-u34" firstAttribute="centerY" secondItem="iT5-Gf-f2u" secondAttribute="centerY" id="cBr-aP-mOC"/>
                                         <constraint firstItem="iT5-Gf-f2u" firstAttribute="centerY" secondItem="iz3-q2-sqF" secondAttribute="centerY" id="lQe-CG-Pc1"/>
                                     </constraints>
                                 </view>
@@ -77,7 +90,7 @@
                                     <rect key="frame" x="8" y="156" width="359" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXl-7O-QJN">
-                                            <rect key="frame" x="331" y="15.5" width="20" height="20"/>
+                                            <rect key="frame" x="331" y="5" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="EfJ-ZD-tm0"/>
                                                 <constraint firstAttribute="height" constant="20" id="lOX-PM-L1f"/>
@@ -88,7 +101,7 @@
                                             </connections>
                                         </button>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mohammed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZS5-ft-Mg4" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                            <rect key="frame" x="8" y="8.5" width="315" height="33.5"/>
+                                            <rect key="frame" x="8" y="-12.5" width="315" height="54.5"/>
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -108,8 +121,8 @@
                                                 <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
                                                     <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Mohammed"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Username"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="إسراء"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="إسم المستخدم"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                     </subviews>
@@ -127,7 +140,7 @@
                                     <rect key="frame" x="8" y="246" width="359" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-dk-Yhg">
-                                            <rect key="frame" x="331" y="15.5" width="20" height="20"/>
+                                            <rect key="frame" x="331" y="5" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="2od-9Q-84E"/>
                                                 <constraint firstAttribute="width" constant="20" id="GOT-1t-hKi"/>
@@ -138,7 +151,7 @@
                                             </connections>
                                         </button>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01021577645" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chb-4f-bVP" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                            <rect key="frame" x="8" y="8.5" width="315" height="33.5"/>
+                                            <rect key="frame" x="8" y="-12.5" width="315" height="54.5"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -158,8 +171,8 @@
                                                 <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                     <color key="value" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="01021577645"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Mobile"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="01021570645"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="الجوال"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                     </subviews>
@@ -177,7 +190,7 @@
                                     <rect key="frame" x="8" y="336" width="359" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bs-ed-JTi">
-                                            <rect key="frame" x="331" y="15.5" width="20" height="20"/>
+                                            <rect key="frame" x="331" y="5" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="5td-yg-10X"/>
                                                 <constraint firstAttribute="width" constant="20" id="RoF-2p-UtY"/>
@@ -188,7 +201,7 @@
                                             </connections>
                                         </button>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mohammed@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXn-WA-sYe" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                            <rect key="frame" x="8" y="8.5" width="315" height="33.5"/>
+                                            <rect key="frame" x="8" y="-12.5" width="315" height="54.5"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -212,7 +225,7 @@
                                                     <color key="value" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="text" value="mohammed@gmail.com"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="E-mail"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="البريد الإلكتروني"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                     </subviews>
@@ -230,7 +243,7 @@
                                     <rect key="frame" x="8" y="426" width="359" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMK-by-ain">
-                                            <rect key="frame" x="331" y="16" width="20" height="20"/>
+                                            <rect key="frame" x="331" y="5" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="J1w-pr-e2t"/>
                                                 <constraint firstAttribute="height" constant="20" id="fDf-mh-2Rh"/>
@@ -241,7 +254,7 @@
                                             </connections>
                                         </button>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="010213243" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEW-AK-fou" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                            <rect key="frame" x="8" y="10" width="315" height="32"/>
+                                            <rect key="frame" x="8" y="-12.5" width="315" height="54.5"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -262,7 +275,7 @@
                                                     <color key="value" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="text" value="1234567"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="الرقم السري"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                     </subviews>
@@ -284,7 +297,7 @@
                                         <constraint firstAttribute="height" constant="30" id="CPh-hq-9cA"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
-                                    <state key="normal" title="Save">
+                                    <state key="normal" title="حفظ">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -345,5 +358,6 @@
     <resources>
         <image name="edit-1" width="24" height="24"/>
         <image name="girl" width="36" height="36"/>
+        <image name="right_arrow" width="14" height="24"/>
     </resources>
 </document>
