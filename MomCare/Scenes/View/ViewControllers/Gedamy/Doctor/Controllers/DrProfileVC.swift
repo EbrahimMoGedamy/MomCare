@@ -15,6 +15,7 @@ class DrProfileVC: UIViewController {
     @IBOutlet weak var myDeatailsBu: LocalizableButton!
     @IBOutlet weak var moreBu: LocalizableButton!
     @IBOutlet weak var changeProfileImg: LocalizableButton!
+    @IBOutlet weak var facebookLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class DrProfileVC: UIViewController {
         self.moreBu.set(image: UIImage(named: "iconfinder_more_126574-3.png"), title: "المزيد", titlePosition: .bottom, additionalSpacing: -8.0, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.bootomContentView.addShadow(location: .top, color: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), opacity: 0.2, radius: 5.0)
         
+        let facebookTap = UITapGestureRecognizer(target: self, action: #selector( SaveDrDetailsVC.shared?.facebookDidTapped(sender:)))
+        facebookLabel.isUserInteractionEnabled = true
+        facebookLabel.addGestureRecognizer(facebookTap)
     }
     
     @IBAction func moreBuTapped(_ sender: LocalizableButton) {

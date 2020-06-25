@@ -43,6 +43,7 @@ extension MedicalGuideVC:UICollectionViewDataSource{
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AllOfObjectsCVCell", for: indexPath) as? AllOfObjectsCVCell{
                 cell.titleLbl.text = self.titleArr[indexPath.row]
                 cell.image.image = UIImage(named: self.objectsImages[indexPath.row])
+//                cell.delegate = self
                 return cell
             }else{
                 return UICollectionViewCell()
@@ -175,7 +176,9 @@ extension MedicalGuideVC:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == mostReadingCollectionView{
             let vc = MoreDetailsVC(nibName: "MoreDetailsVC", bundle: nil)
-            vc.imageName = "4126066-2012852796"
+            vc.imageName = self.images[indexPath.row]
+            vc.desc = self.descArr[indexPath.row]
+            vc.headTitle = self.titles[indexPath.row]
             let nav = UINavigationController(rootViewController: vc)
             self.view.window?.rootViewController = nav
         }
@@ -185,5 +188,69 @@ extension MedicalGuideVC:UICollectionViewDelegate{
             self.view.window?.rootViewController = nav
            // self.handlePushSegue(viewController: DrProfileVC.self)
         }
+        var arr = ["https://www.altebby.com/برنامج-أنت%D9%90-وطفلك-للعناية-بالطفل-من-ي/","https://www.elevitarabia.com/ar/breastfeeding/",
+              "https://www.mayoclinic.org/ar/healthy-lifestyle/labor-and-delivery/in-depth/stages-of-labor/art-20046545",
+              "https://www.unicef.org/arabic/health/health_42779.html",
+              "https://www.health.gov.il/Arabic/Subjects/pregnancy/during/Pages/proper_nutrition_during_pregnancy.aspx",
+              "https://www.doctoori.net/pregnancy-birth/labour-and-birth/pregnancybirthbeyond-for-dad.html"
+        ]
+        if collectionView == allObjctsCollectionView{
+//            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AllOfObjectsCVCell", for: indexPath) as? AllOfObjectsCVCell{
+                switch indexPath.row {
+                case 0:
+                    guard let url = URL(string: "https://www.altebby.com/برنامج-أنت%D9%90-وطفلك-للعناية-بالطفل-من-ي/") else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                case 1:
+                    guard let url = URL(string: "https://www.elevitarabia.com/ar/breastfeeding/") else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                case 2:
+                    guard let url = URL(string: "https://www.mayoclinic.org/ar/healthy-lifestyle/labor-and-delivery/in-depth/stages-of-labor/art-20046545") else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                    
+                case 3:
+                    guard let url = URL(string: "https://www.unicef.org/arabic/health/health_42779.html") else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                
+                case 4:
+                    guard let url = URL(string: "https://www.health.gov.il/Arabic/Subjects/pregnancy/during/Pages/proper_nutrition_during_pregnancy.aspx") else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+
+                case 5:
+                    guard let url = URL(string: "https://www.doctoori.net/pregnancy-birth/labour-and-birth/pregnancybirthbeyond-for-dad.html") else {
+                        return
+                    }
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                default:
+                    return
+                }
+            }
     }
 }
+
+//extension MedicalGuideVC : CellTapped {
+//    func cellTappedBu(arr: [String]) {
+//        <#code#>
+//    }
+//}

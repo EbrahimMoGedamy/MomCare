@@ -16,6 +16,7 @@
             <connections>
                 <outlet property="bottomView" destination="GMP-Kc-02l" id="y8g-QY-hIo"/>
                 <outlet property="descriptionTxt" destination="WC7-uY-KBy" id="lop-SM-DmN"/>
+                <outlet property="headTitleLbl" destination="StT-EV-Dxi" id="Czp-xR-xDB"/>
                 <outlet property="imgProfile" destination="Kbn-nF-b0n" id="60x-La-zoR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,14 +38,14 @@
                                         <constraint firstAttribute="height" constant="190" id="ecj-IR-C9t"/>
                                     </constraints>
                                 </imageView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-uY-KBy">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-uY-KBy">
                                     <rect key="frame" x="0.0" y="234.5" width="320" height="365.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <mutableString key="text">لا ينصح بإصطحاب الطفل في رحلة خارج البلاد خلال الشهرين الأول والثاني من عمره، لأن هذه المرحلة يصعب على الأم تنظيم حياتها، وتكرس كل وقتها للطفل.
+                                    <string key="text">لا ينصح بإصطحاب الطفل في رحلة خارج البلاد خلال الشهرين الأول والثاني من عمره، لأن هذه المرحلة يصعب على الأم تنظيم حياتها، وتكرس كل وقتها للطفل.
 
 أما بعد إتمامه ثلاثة أشهر تصبح مناعتهم أقوى، وينتظم نومهم بصورة أفضل، كما تكون الأم قد إستعادت عافيتها وتكيفت مع الوضع الجديد.
 
-أما في حالة السفر بعد الولادة، فقد تفاجأ الأم ببعض الأمور التي لم تضعها في إعتبارها من قبل، ولا تحسن التصرف فيها خلال السفر، فمثلاً يمكن أن تحتاج إلى أخذ الطفل للطبيب الخاص به في حالة طارئة.</mutableString>
+أما في حالة السفر بعد الولادة، فقد تفاجأ الأم ببعض الأمور التي لم تضعها في إعتبارها من قبل، ولا تحسن التصرف فيها خلال السفر، فمثلاً يمكن أن تحتاج إلى أخذ الطفل للطبيب الخاص به في حالة طارئة.</string>
                                     <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -104,7 +105,8 @@
                                 <constraint firstAttribute="height" constant="20" id="TQK-sh-VpP"/>
                                 <constraint firstAttribute="width" constant="20" id="nWF-DA-nUt"/>
                             </constraints>
-                            <state key="normal" image="126"/>
+                            <color key="tintColor" red="0.08235294118" green="0.6705882353" blue="0.75686274509999996" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" image="bookmark" catalog="system"/>
                             <connections>
                                 <action selector="saveOrNotBuTapped:" destination="-1" eventType="touchUpInside" id="WK4-eu-J8d"/>
                             </connections>
@@ -133,8 +135,8 @@
         </view>
     </objects>
     <resources>
-        <image name="126" width="116" height="112.5"/>
         <image name="133-022508-postpartum-depression-common-new-parents_700x400" width="107" height="107"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="right_arrow" width="14" height="24"/>
     </resources>
 </document>

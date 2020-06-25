@@ -17,7 +17,6 @@ extension SaveDrDetailsVC {
           if UIApplication.shared.canOpenURL(url) {
               UIApplication.shared.open(url, options: [:], completionHandler: nil)
           }
-          
       }
       
       @objc func openWhatsapp(sender: UITapGestureRecognizer){

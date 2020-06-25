@@ -15,6 +15,9 @@ class SaveDrDetailsVC: UIViewController {
     @IBOutlet weak var phoneLblTapped: UILabel!
     @IBOutlet weak var whatsAppLbl: UILabel!
     @IBOutlet weak var facebookLabel: UILabel!
+    
+    static var shared : SaveDrDetailsVC?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
