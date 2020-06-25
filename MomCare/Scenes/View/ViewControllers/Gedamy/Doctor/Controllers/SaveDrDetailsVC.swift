@@ -23,17 +23,18 @@ class SaveDrDetailsVC: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         self.backBu.set(image: UIImage(named: "next"), title: "رجوع", titlePosition: .left, additionalSpacing: 10, state: .normal, color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.saveBu.layer.cornerRadius = 20.0
-        
+        setTextFieldData(state: false)
         let facebookTap = UITapGestureRecognizer(target: self, action: #selector(facebookDidTapped(sender:)))
         facebookLabel.isUserInteractionEnabled = true
         facebookLabel.addGestureRecognizer(facebookTap)
-        let whatsappTap = UITapGestureRecognizer(target: self, action: #selector(openWhatsapp(sender:)))
-        whatsAppLbl.isUserInteractionEnabled = true
-        whatsAppLbl.addGestureRecognizer(whatsappTap)
+    
+    }
+    
+    func setTextFieldData(state : Bool) {
+        self.phoneLblTapped.isUserInteractionEnabled = state
+        self.whatsAppLbl.isUserInteractionEnabled = state
+        self.facebookLabel.isUserInteractionEnabled = state
         
-        let callTap = UITapGestureRecognizer(target: self, action: #selector(makeCall(sender:)))
-        phoneLblTapped.isUserInteractionEnabled = true
-        phoneLblTapped.addGestureRecognizer(callTap)
     }
     
     @IBAction func backBuTapped(_ sender: UIButton) {
@@ -44,6 +45,10 @@ class SaveDrDetailsVC: UIViewController {
         self.handlePresentSegue(viewController: WorkDatesVC.self)
     }
     
+    @IBAction func editDataBuTapped(_ sender: UIButton) {
+        setTextFieldData(state: true)
+    }
+    
     @IBAction func editAddresBuTapped(_ sender: UIButton) {
         let vc = MapVC(nibName: "MapVC", bundle: nil)
         let nav = UINavigationController(rootViewController: vc)
@@ -51,6 +56,7 @@ class SaveDrDetailsVC: UIViewController {
     }
     
     @IBAction func saveBuTapped(_ sender: UIButton) {
+        setTextFieldData(state: false)
         self.dismissview()
     }
     
